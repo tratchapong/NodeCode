@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    table,tr,th,td {
+      border : 1px dashed blue;
+      border-collapse: collapse;
+      padding : 5px;
+    }
+  </style>
+  <script>
+  function gotopage(target) {
+    location.href = '/save'
+  }
+  </script>
+
+</head>
+<body>
+  <%- include('./hello') %>
+  <table>
+    <tr>
+      <% for(let key in users[0]) { %>
+      <th> <%= key %> </th>
+      <% } %> 
+      <th>Action</th>
+    </tr>
+    <% users.forEach(x => { %>
+      <tr>
+       <% for(let key in x) { %>
+          <td><%= x[key] %></td>
+       <% } %>
+       <td>
+         <a href="/edit/<%= x.userId %>">Edit | </a> 
+         <a href="/delete/<%= x.userId %>">Delete</a> 
+       </td>
+      </tr>
+   <% }) %>
+  
+  </table>
+  <a href='/save'>Save Change</a>
+  <!-- <button onclick="gotopage(this)">SAVE ALL CHANGE TO FILE</button> -->
+</body>
+</html>

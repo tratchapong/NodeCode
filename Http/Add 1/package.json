@@ -1,0 +1,14 @@
+{
+  "name": "nodejs-cc5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "http-basic1 copy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body": "^5.1.0"
+  }
+}

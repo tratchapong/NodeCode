@@ -1,0 +1,16 @@
+{
+  "name": "nodejs-cc5",
+  "version": "1.0.0",
+  "description": "Codecamp 5 is good...",
+  "main": "test-fetch-1.js",
+  "dependencies": {
+    "node-fetch": "^2.6.0",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
