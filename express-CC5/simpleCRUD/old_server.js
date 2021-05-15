@@ -1,9 +1,8 @@
 const express = require('express')
 // const ejs = require('ejs')
 const fs = require('fs')
-const path = require('path')
 
-users = (JSON.parse(fs.readFileSync(__dirname + '/output.json'))).users
+users = (JSON.parse(fs.readFileSync('./output.json'))).users
 // data = fs.readFileSync('./output.json')
 // data = JSON.parse(data)
 // users = data.users
